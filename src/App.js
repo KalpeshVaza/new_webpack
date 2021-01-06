@@ -49,8 +49,8 @@ const App = () => {
             <Route path="/profile" component={Profile} />
             <Route path="/external-api" component={ExternalApi} />
           </Switch>
-        </Container> */}
-        {/* <Footer /> */}
+        </Container>
+        <Footer /> */}
       </div>
     </Router>
   );
