@@ -91,9 +91,6 @@ const NavBar = () => {
                 </NavLink>
               </NavItem>
              <NavLink>
-               <a href="https://www.resideo.com/us/en/products/air/" target="_blank">Link1</a>
-             </NavLink>
-             <NavLink>
                <a href="https://www.resideo.com/us/en/pro/solutions/air/" target="_blank">Solution</a>
              </NavLink>
              <NavLink>
