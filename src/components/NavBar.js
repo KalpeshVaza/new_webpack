@@ -79,26 +79,22 @@ const NavBar = () => {
           
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/"
-                  exact
-                  activeClassName="router-link-exact-active"
-                >
-                  Home
-                </NavLink>
-              </NavItem>
+            <Nav className="mr-auto" navbar>              
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/solutions/air/" target="_blank">Solution</a>
+               <a href="https://www.resideo.com/us/en/pro/products/air/" target="_blank">Products</a>
+             </NavLink>             
+             <NavLink>
+               <a href="https://www.resideo.com/us/en/pro/solutions/" target="_blank">Solutions</a>
              </NavLink>
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/resources/" target="_blank">Training</a>
+               <a href="https://www.resideo.com/us/en/pro/resources/" target="_blank">Resources</a>
+             </NavLink>
+             <NavLink>
+               <a href="https://pro.resideo.com/perks/" target="_blank">PERKS</a>
              </NavLink>
              {isAuthenticated && (
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/resources/" target="_blank">My Business</a>
+               <a href="https://pro.resideo.com/company" target="_blank">My Business</a>
              </NavLink>  
              )}
          
@@ -115,7 +111,7 @@ const NavBar = () => {
                     className="btn-margin"
                     onClick={() => loginWithRedirect()}
                   >
-                    Sign in
+                    Join / Sign in
                   </Button>
                 </NavItem>
               )}
