@@ -89,9 +89,9 @@ const NavBar = () => {
              <NavLink>
                <a href="https://www.resideo.com/us/en/pro/resources/">Resources</a>
              </NavLink>
-             *<NavLink>
+             {/*<NavLink>
                <a href="https://pro.resideo.com/perks/">PERKS</a>
-             </NavLink>*
+             </NavLink>*/}
              {isAuthenticated && (
              <NavLink>
                <a href="https://pro.resideo.com/company">My Business</a>
