@@ -81,20 +81,20 @@ const NavBar = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>              
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/products/air/" target="_blank">Products</a>
+               <a href="https://www.resideo.com/us/en/pro/products/air/">Products</a>
              </NavLink>             
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/solutions/" target="_blank">Solutions</a>
+               <a href="https://www.resideo.com/us/en/pro/solutions/">Solutions</a>
              </NavLink>
              <NavLink>
-               <a href="https://www.resideo.com/us/en/pro/resources/" target="_blank">Resources</a>
+               <a href="https://www.resideo.com/us/en/pro/resources/">Resources</a>
              </NavLink>
-             <NavLink>
-               <a href="https://pro.resideo.com/perks/" target="_blank">PERKS</a>
-             </NavLink>
+             {/*<NavLink>
+               <a href="https://pro.resideo.com/perks/">PERKS</a>
+             </NavLink>*/}
              {isAuthenticated && (
              <NavLink>
-               <a href="https://pro.resideo.com/company" target="_blank">My Business</a>
+               <a href="https://pro.resideo.com/company">My Business</a>
              </NavLink>  
              )}
          
@@ -122,25 +122,31 @@ const NavBar = () => {
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile rounded-circle"
-                      width="50"
+                      width="40"
                     />
                   </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem header>{user.name}</DropdownItem>
+                  <DropdownMenu>                    
                     <DropdownItem
                       tag={RouterNavLink}
                       to="/profile"
                       className="dropdown-profile"
                       activeClassName="router-link-exact-active"
                     >
-                      <FontAwesomeIcon icon="user" className="mr-3" /> Profile
+                      My profile
+                    </DropdownItem>             
+                    <DropdownItem
+                      tag={RouterNavLink}
+                      to="/company"
+                      className="dropdown-profile"
+                      activeClassName="router-link-exact-active"
+                    >
+                      My company
                     </DropdownItem>
                     <DropdownItem
                       id="qsLogoutBtn"
                       onClick={() => logoutWithRedirect()}
                     >
-                      <FontAwesomeIcon icon="power-off" className="mr-3" /> Log
-                      out
+                      Sign out
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
